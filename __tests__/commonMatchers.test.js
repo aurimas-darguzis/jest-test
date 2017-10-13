@@ -57,3 +57,12 @@ const shoppingList = [
 test('the shopping list has beer on it', () => {
     expect(shoppingList).toContain('beer');
 });
+
+// exceptions
+function compileAndroidCode() {
+    throw new ConfigError('You are using the wrong JDK');
+}
+
+test('compiling android goes as expected', () => {
+    expect(compileAndroidCode).toThrow();
+})
