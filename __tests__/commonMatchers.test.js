@@ -35,3 +35,12 @@ test('adding floating point numbers', () => {
     expect(value).not.toBe(0.3); // It isn't! Because rounding error
     expect(value).toBeCloseTo(0.3); // This works!
 });
+
+// strings
+test('thereis no I in team', () => {
+    expect('team').not.toMatch(/I/);
+});
+
+test('but there is a "stop" in Chrustoph', () => {
+    expect('Christoph').toMatch(/stop/);
+});
