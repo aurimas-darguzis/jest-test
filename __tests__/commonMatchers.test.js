@@ -44,3 +44,16 @@ test('thereis no I in team', () => {
 test('but there is a "stop" in Chrustoph', () => {
     expect('Christoph').toMatch(/stop/);
 });
+
+// array
+const shoppingList = [
+    'diapers',
+    'kleenex',
+    'trash bags',
+    'paper towels',
+    'beer',
+];
+
+test('the shopping list has beer on it', () => {
+    expect(shoppingList).toContain('beer');
+});
